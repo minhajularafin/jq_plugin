@@ -1,0 +1,25 @@
+/*Page 2 start*/
+.s1 , .s2 , .s3 ,.s4 ,.s5 {
+  min-height: 350px;
+}
+.s1{
+  margin-top: 25px;
+  background-color: red;
+}
+.s2{
+  margin-top: 25px;
+  background-color: green;
+}
+.s3{
+  margin-top: 25px;
+  background-color: yellow;
+}
+.s4{
+  margin-top: 25px;
+  background-color: moccasin;
+}
+.s5{
+  margin-top: 25px;
+  background-color: black;
+}
+/*Page 2 end*/
