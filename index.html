@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--  CSS Links -->
+    <link rel="stylesheet" type="text/css" href="vendor/Minimal-Hexagon-SVG-Timer/svgTimer.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+    <title>001</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-dark ">
+          <div class="container-fluid">
+            <a class="navbar-brand text-white" href="#">Jquere plugin</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link text-white active" aria-current="page" href="index.html">Page 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="page_2.html" target="_blank">Page 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="page_3.html target="_blank"">Page 3</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link text-white" href="page_4.html" target="_blank">Page 4</a>
+                </li>               
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section>
+      <div class="container">
+        <h1 class="bg-secondary text-center my-4">Animated box.</h1>
+        <a class="btn c_btn c-btn-p" id="prev" href="#"><</a>
+        <a class="btn c_btn c-btn-n" id="next" href="#">></a>
+        <div class="area">
+          <div class="box d-block"></div>
+        </div>
+      </div>
+    </section>
+    <!-- counter up :1 -->
+    <section class="counter-up1">
+      <div class="container">
+        <div class="row">
+          <h1 class="my-4 text-center bg-primary">Counter up : 1</h1>
+          <div class="col-lg-4">
+            <div class="text-center">
+              <h1 class="counter">1,234,567.00</h1>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="text-center">
+              <h1><span>$</span><span class="counter">1.99</span></h1>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="text-center">
+              <h1 class="counter">12345</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- counter up :2 -->
+    <section class="counter-up2">
+      <div class="container">
+        <div class="row">
+          <h1 class="my-4 text-center bg-primary">Counter up : 2</h1>
+          <div  class="item">
+            <div class="countup" id="countup1">
+              <span id="hour" class="timeel hours">00</span>
+              <span class="timeel timeRefHours">hours</span>
+              <span id="min" class="timeel minutes">00</span>
+              <span class="timeel timeRefMinutes">minutes</span>
+              <span id="sec" class="timeel seconds">00</span>
+              <span class="timeel timeRefSeconds">seconds</span>
+            </div>
+            <div class=" row">
+              <div class="col-6 d-flex justify-content-end">
+                <button class="btn btn-info btn-lg timer_button" id="start_button">Start</button>
+              </div>
+              <div class="col-6">
+                <button class="btn btn-info btn-lg timer_button" id="timer_submit">Stop</button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-auto mx-auto pt-4">
+                <h1> <div id="total_time" >
+                </div> </h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="counter-up3 text-center my-5">
+        <div class="container">
+          <h1 class="my-4 text-center bg-primary">Counter up : 3</h1>
+          <div class="timer well fs-1 my-4"></div>
+          <p>
+            <button class="btn btn-success" onClick="$('.timer').countimer('start');">Start</button>
+            <button class="btn btn-danger" onClick="$('.timer').countimer('stop');">Stop</button>
+            <button class="btn btn-warning" onClick="$('.timer').countimer('resume');">Resume</button>
+          </p>
+        </div>
+      </section>
+      <section class="counter-up4">
+        <div class="container">
+          <h1 class="my-4 text-center bg-primary">Counter up : 4</h1>
+          <div class="row justify-content-center">
+            <div class="col-lg-5">
+              <div class="input_group">
+                <input class="start_value form-control" type="number" placeholder="Enter a start value" value="0" step="100">
+                <button class="up btn btn-primary my-4">Animate Up
+                </button>
+              </div>
+              <div class="button_group">
+                <input class="end_value form-control" type="number" placeholder="Enter an end value" value="1000000" step="100">
+                <button class="down btn btn-danger my-4">Animate Down
+                </button>
+              </div>
+              <h1 class="number start_value">100</h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="counter-up5">
+        <div class="container">
+          <h1 class="my-4 text-center bg-primary">Counter up : 5</h1>
+          <div class="svg-test">
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    
+    
+    <!-- JS Links -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
+    <script src="vendor/counter-up/jquery.counterup.min.js"></script>
+    <script src="vendor/moment.min.js"></script>
+    <script src="vendor/ez.countimer.min.js"></script>
+    <script src="vendor/jquery.easy_number_animate.min.js"></script>
+    <script src="vendor/Minimal-Hexagon-SVG-Timer/svgTimer.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    
+  </body>
+</html>
